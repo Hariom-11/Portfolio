@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav>
+        <div class="logo">
+            <h1><span>H</span>ARIOM</h1>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#abo">About</a></li>
+            <li><a href="#ski">Skills</a></li>
+            <li><a href="#serv">Services</a></li>
+            <li><a href="#cont">Contact</a></li>
+        </ul>
+        <div class="icon">
+            <i id="ham" class="ri-menu-line"></i>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- hero section -->
+        <section id="home" class="herosection">
+            <div class="box">
+                <h1 class="opacity"> creative <span>frontEnd</span> developer</h1>
+                <p class="opacity">Crafting pixel-perfect ideas into interactive realities.</p>
+            </div>
+            <div class="vertical">
+                <p class="v1">HARIOM SINGH TOMAR</p>
+                <p class="v2">FRONTEND DEVELOPER</p>
+            </div>
+            <img src="super.jpg" alt="">
+        </section>
+
+        <!-- about us section -->
+        <section id="abo" class="about">
+
+            <div class="shape">
+                <img class="images img1" src="new profile pic.png" alt="">
+                <img class="images img2" src="new profile pic.png" alt="">
+            </div>
+
+            <div class="top">
+                <h2>WHO AM I ?</h2>
+                <div class="paragraph">
+                    <p>Hey, I’m Hariom! I’m a frontend web developer who loves building clean, interactive, and
+                        user-friendly websites. I enjoy working with HTML, CSS, JavaScript, react and animations using
+                        GSAP to bring ideas to life.</p>
+                        <p>I’m always learning and exploring new ways to improve my skills. Whether it’s designing in Figma or
+                            making smooth animations, I focus on creating great experiences for users.</p>
+                            <p>Looking forward to connecting and building something amazing!</p>
+                        </div>
+            </div>
+
+            <div class="bottom">
+                <ul class="points">
+                    <li class="p1">skills</li>
+                    <li class="p2">Education</li>
+                </ul>
+                <ul class="li">
+                    <li>Creative forntend developer</li>
+                    <li>UI designer</li>
+                </ul>
+            </div>
+
+            <!-- <div class="btn">
+                <button>Services</button>
+                <button class="btn2">Contact</button>
+            </div> -->
+        </section>
+
+        <!-- skills section -->
+         <section id="ski" class="skills">
+
+            <h2>
+                Skills
+            </h2>
+
+            <div class="container">
+
+                <div class="left">
+                    <img src="html.png" alt="">
+                    <p>Git</p>
+                    <img src="css.png" alt="">
+                    <p>github</p>
+                    <img src="Tailwind.png" alt="">
+                    <p>Nodejs</p>
+                    <img src="javascript.png" alt="">
+                    <p>React</p>
+                </div>
+
+                <div class="mid">
+                    <div class="points">
+                    <div class="point p1"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    </div>
+                    <div class="v_line"></div>
+                </div>
+
+                <div class="right">
+                    <p>HTML</p>
+                    <img src="git.png" alt="">
+                    <p>CSS</p>
+                    <img src="github.png" alt="">
+                    <p>Tailwind</p>
+                    <img src="nodejs.png" alt="">
+                    <p>JS</p>
+                    <img src="react.png" alt="">
+                </div>
+                
+            </div>
+
+         </section>
+
+         <!-- services section -->
+          <section id="serv" class="services">
+
+            <h2>Services</h2>
+            
+            <div class="container1">
+
+                <div class="top card">
+                    <div class="circle">
+                        <img src="development Background Removed.png" alt="">
+                    </div>
+                    <h3>FRONTEND DEVELOPMENT</h3>
+                    <p>Bringing ideas to life with modern, responsive, and user-focused web experiences that look great and perform seamlessly across all devices. </p>
+                    <a href="#cont"><button>Contact</button></a>
+                </div>
+
+                <div class="down card">
+                    <div class="circle">
+                        <img src="figma.png" alt="">
+                    </div>
+                    <h3>UI <br> DESIGNER</h3>
+                    <p>Designing clean, intuitive, and engaging user interfaces that elevate brand identity and ensure smooth user journeys.</p>
+                    <a href="#cont"><button>Contact</button></a>
+                </div>
+
+            </div>
+
+          </section>
+
+          <!-- contact section -->
+           <section id="cont" class="contact">
+            <h2>Contact</h2>
+            <div class="background">
+                <div class="container2">
+                    <div class="left">
+                        <h4>Get In Touch</h4>
+                        <form class="fom" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="59ac720d-3e8e-4b6c-b5dd-0d39fe57f19a">
+                        <input type="text" name="name" placeholder="FULL NAME" required>
+                        <input type="email" name="Email" placeholder="EMAIL" required>
+                        <!-- <input type="text" name="subject" placeholder="SUBJECT" > -->
+                        <textarea class="message" name="Message" rows="6" placeholder="message...." required></textarea>
+                        <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="right">
+                        <p>Social media <br>handles.</p>
+                        <div class="icon">
+                           <a target="_blank" href="https://www.linkedin.com/in/hariom-singh-tomar/"><i class="ri-linkedin-box-fill"></i></a>
+                           <a target="_blank" href="https://github.com/Hariom-11"><i class="ri-github-fill"></i></a>
+                           <a target="_blank" href="https://www.instagram.com/itz_om_singh7/"><i class="ri-instagram-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <img class="img1" src="shapes1.png" alt="">
+                <img class="img2" src="shapes1.png" alt="">
+            </div>
+           </section>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
