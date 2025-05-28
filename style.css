@@ -1,0 +1,646 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lato";
+  background-color: black;
+}
+
+nav {
+  width: 100%;
+  padding: 1rem 0rem;
+  position: absolute;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.336);
+  color: white;
+}
+nav .logo {
+  margin-left: 4rem;
+  font-size: 1.5rem;
+}
+nav .logo span {
+  color: #F6C125;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 4rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: 0.5s;
+}
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: #F6C125;
+}
+nav .icon {
+  align-items: center;
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: #F6C125;
+  display: none;
+}
+
+main {
+  width: 100%;
+}
+main .herosection {
+  width: 100%;
+  position: relative;
+}
+main .herosection img {
+  width: 100%;
+  aspect-ratio: 16/8;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .herosection .box {
+  width: 30%;
+  height: 6rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.37);
+  color: white;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 1rem;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  justify-content: center;
+}
+main .herosection .box h1 {
+  word-spacing: 4px;
+  text-transform: uppercase;
+  color: #F6C125;
+}
+main .herosection .box h1 span {
+  color: white;
+}
+main .herosection .vertical {
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  top: 40%;
+  position: absolute;
+  color: white;
+  writing-mode: vertical-lr;
+}
+main .about {
+  width: 100%;
+  background-color: #F6C125;
+  margin-top: -2px;
+  padding: 3rem 0;
+}
+main .about .shape {
+  display: none;
+}
+main .about .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 2px;
+}
+main .about .top h2 {
+  color: #440000;
+  font-size: 5rem;
+  font-weight: 900;
+}
+main .about .top .paragraph {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+main .about .top .paragraph p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+main .about .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+}
+main .about .bottom .points {
+  display: flex;
+  gap: 4rem;
+  font-size: 3rem;
+}
+main .about .bottom .points li {
+  list-style: none;
+}
+main .about .bottom .li {
+  font-size: 2rem;
+}
+main .skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+main .skills h2 {
+  font-size: 5rem;
+  color: #F6C125;
+  background-color: rgba(0, 0, 0, 0.42);
+  z-index: 1;
+  text-align: center;
+  padding-top: 5rem;
+  position: sticky;
+  top: 0;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+main .skills .container {
+  width: 100%;
+  display: flex;
+  padding-bottom: 4rem;
+  justify-content: space-around;
+}
+main .skills .container .left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .skills .container .left p {
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+  margin: 6rem 0;
+}
+main .skills .container .left img {
+  width: 60%;
+}
+main .skills .container .mid {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+main .skills .container .mid .points {
+  width: 4rem;
+  height: 100%;
+  position: absolute;
+}
+main .skills .container .mid .points .point {
+  width: 4rem;
+  height: 4rem;
+  background-color: #F6C125;
+  border-radius: 50%;
+  margin: 16.1rem 0;
+}
+main .skills .container .mid .points .p1 {
+  margin-top: 8rem;
+}
+main .skills .container .mid .v_line {
+  width: 1rem;
+  background-color: white;
+  height: 90%;
+  border-radius: 20%;
+}
+main .skills .container .right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .skills .container .right p {
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+  margin: 6rem 0;
+}
+main .skills .container .right img {
+  width: 60%;
+}
+main .services {
+  width: 100%;
+  background-color: #F6C125;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+}
+main .services h2 {
+  color: #440000;
+  font-size: 8rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+main .services .container1 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15rem;
+  margin-bottom: 5rem;
+}
+main .services .container1 .card {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding: 10rem 0;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.518);
+  position: relative;
+}
+main .services .container1 .card .circle {
+  width: 20rem;
+  background-color: rgba(0, 0, 0, 0.518);
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: -15%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+main .services .container1 .card .circle img {
+  width: 100%;
+}
+main .services .container1 .card h3 {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+main .services .container1 .card p {
+  color: white;
+  text-align: center;
+  width: 60%;
+  font-size: 3rem;
+  font-weight: 300;
+}
+main .services .container1 .card button {
+  font-size: 5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.518);
+  padding: 1rem 3rem;
+  border: 0.5px solid white;
+  border-radius: 10px;
+}
+main .services .container1 .down .circle {
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .services .container1 .down .circle img {
+  width: 80%;
+}
+main .contact {
+  width: 100%;
+  background-color: black;
+}
+main .contact h2 {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  margin-top: 5rem;
+}
+main .contact .background {
+  width: 100%;
+  position: relative;
+}
+main .contact .background img {
+  width: 100%;
+}
+main .contact .background .img2 {
+  rotate: 180deg;
+  margin-top: -15rem;
+}
+main .contact .background .container2 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 2;
+  gap: 4rem;
+}
+main .contact .background .container2 .left {
+  display: flex;
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  padding: 2rem 4rem;
+  background-color: rgba(0, 0, 0, 0.213);
+  gap: 5rem;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+main .contact .background .container2 .left h4 {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+main .contact .background .container2 .left .fom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+main .contact .background .container2 .left .fom input {
+  width: 100%;
+  padding-left: 4rem;
+  background-color: rgba(0, 0, 0, 0.351);
+  border: 1px solid white;
+  height: 10rem;
+  color: white;
+  font-size: 5rem;
+  border-radius: 20px;
+  text-align: initial;
+}
+main .contact .background .container2 .left .fom .message {
+  width: 100%;
+  height: 30rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.351);
+  border: 1px solid white;
+  color: white;
+  font-size: 5rem;
+  border-radius: 20px;
+  text-align: initial;
+}
+main .contact .background .container2 .left .fom .message::-moz-placeholder {
+  padding: 4rem;
+  text-align: center;
+  color: white;
+  opacity: 0.7;
+}
+main .contact .background .container2 .left .fom .message::placeholder {
+  padding: 4rem;
+  text-align: center;
+  color: white;
+  opacity: 0.7;
+}
+main .contact .background .container2 .left .fom button {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.456);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 4rem;
+  transition: 0.5s;
+}
+main .contact .background .container2 .left .fom button:hover {
+  background-color: #F6C125;
+  color: black;
+}
+main .contact .background .container2 .left .fom input::-moz-placeholder {
+  font-size: 4rem;
+  color: white;
+  opacity: 0.8;
+  text-align: center;
+}
+main .contact .background .container2 .left .fom input::placeholder {
+  font-size: 4rem;
+  color: white;
+  opacity: 0.8;
+  text-align: center;
+}
+main .contact .background .container2 .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.458);
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 2rem 4rem;
+}
+main .contact .background .container2 .right p {
+  color: white;
+  font-size: 4rem;
+}
+main .contact .background .container2 .right .icon {
+  color: white;
+  font-size: 10rem;
+}
+main .contact .background .container2 .right .icon a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+main .contact .background .container2 .right .icon a:hover {
+  color: #F6C125;
+  transform: translateY(-2%) scale(5px);
+}
+
+html {
+  font-size: 1vw;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+  nav .icon {
+    display: block;
+  }
+  nav .show_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 11%;
+    background-color: rgba(98, 98, 98, 0.831372549);
+    width: 100%;
+    gap: 1rem;
+    height: 200px;
+  }
+  nav .show_data li {
+    margin-right: 0;
+  }
+}
+@media (min-width: 700px) {
+  main .about .shape {
+    display: block;
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 16/3;
+  }
+  main .about .shape .images {
+    width: 4rem;
+    position: absolute;
+  }
+  main .about .shape .img1 {
+    top: 20%;
+    left: 10%;
+    rotate: 10deg;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 10px 10px 10px;
+  }
+  main .about .shape .img2 {
+    width: 6rem;
+    top: 30%;
+    right: 10%;
+    rotate: -20deg;
+    box-shadow: 10px 10px 10px;
+    border-radius: 20px 20px 0px 20px;
+  }
+  main .about .top .paragraph p {
+    font-size: 1.5rem;
+  }
+  main .about .bottom .points {
+    font-size: 2rem;
+  }
+  main .about .bottom .li {
+    font-size: 1.5rem;
+  }
+  main .about .btn button {
+    font-size: 2rem;
+    padding: 12px 32px;
+  }
+  main .services {
+    gap: 4rem;
+    padding-bottom: 3rem;
+  }
+  main .services h2 {
+    font-size: 5rem;
+  }
+  main .services .container1 {
+    flex-direction: initial;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  main .services .container1 .card {
+    width: 40%;
+    gap: 2rem;
+    padding: 2rem 0;
+    padding-top: 5rem;
+  }
+  main .services .container1 .card .circle {
+    width: 10rem;
+    top: -18%;
+  }
+  main .services .container1 .card h3 {
+    font-size: 3rem;
+  }
+  main .services .container1 .card p {
+    font-size: 1rem;
+  }
+  main .services .container1 .card button {
+    font-size: 2rem;
+  }
+  main .contact h2 {
+    margin-top: 1.5rem;
+  }
+  main .contact .background {
+    width: 100%;
+  }
+  main .contact .background img {
+    aspect-ratio: 16/8;
+  }
+  main .contact .background .img2 {
+    display: none;
+  }
+  main .contact .background .container2 {
+    flex-direction: row;
+    top: 5%;
+    gap: none;
+  }
+  main .contact .background .container2 .left {
+    width: 60%;
+    gap: 3rem;
+    margin-left: 15%;
+  }
+  main .contact .background .container2 .left h4 {
+    font-size: 3rem;
+  }
+  main .contact .background .container2 .left .fom input {
+    height: 4rem;
+    font-size: 2rem;
+    text-align: initial;
+    padding-left: 1rem;
+    font-weight: 100;
+  }
+  main .contact .background .container2 .left .fom .message {
+    height: 10rem;
+    font-size: 2rem;
+  }
+  main .contact .background .container2 .left .fom .message::-moz-placeholder {
+    font-size: 2rem;
+  }
+  main .contact .background .container2 .left .fom .message::placeholder {
+    font-size: 2rem;
+  }
+  main .contact .background .container2 .left .fom input::-moz-placeholder {
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  main .contact .background .container2 .left .fom input::placeholder {
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  main .contact .background .container2 .left .fom button {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+  main .contact .background .container2 .right {
+    width: 10%;
+    flex-direction: column;
+  }
+  main .contact .background .container2 .right p {
+    writing-mode: vertical-rl;
+    font-size: 2rem;
+  }
+  main .contact .background .container2 .right p br {
+    display: none;
+  }
+  main .contact .background .container2 .right .icon {
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
